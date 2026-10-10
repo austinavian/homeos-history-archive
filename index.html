@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HomeOS History Archive</title><link rel="stylesheet" href="style.css"></head>
+<body><nav aria-label="Main"><a href="./">Home</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav><main>
+<h1>HomeOS History Archive</h1>
+<p>A personal Home Assistant history archive maintained by <a href="https://github.com/austinavian">austinavian</a>. A local Mac worker preserves original historical exports, event records, and native database snapshots in a dedicated folder in the owner's Google Drive.</p>
+<p>The app uses Google Drive to upload and verify archive files, recover its archive catalog, retrieve historical records on demand, and expire the oldest verified archive-owned objects when the configured storage cap is reached. Authenticated archive views support historical queries beyond Home Assistant Recorder's normal retention window.</p>
+<h2>Why Google Drive access is requested</h2>
+<p>The existing archive folder was created separately, so the current rclone configuration requests full Google Drive access. That permission can technically access files throughout the authorized account. The app's configured operations target its dedicated archive folder; it does not intentionally read, modify, or delete unrelated Drive documents.</p>
+<p>This is a personal tool, not a public archive service. This public website contains documentation only. It provides no access to the archive, Home Assistant, or credentials.</p>
+<p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a> before authorizing access. Contact the maintainer through the linked GitHub profile; do not post credentials or household history publicly.</p>
+</main><footer>Documentation updated October 10, 2026. Independent personal project; not affiliated with Google or Home Assistant.</footer></body></html>
